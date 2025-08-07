@@ -1,0 +1,49 @@
+:root{
+    --color-primario:#007bff;
+    --color-fondo-header: var(--color-primario);
+    --color-texto-header: white;
+    --color-azul-body: rgba(0, 139, 191, 1); 
+    --color-gris-body: rgba(255, 255, 255, 0.4);
+    --color-logo-sombra: rgba(83, 175, 236, 0.5);
+}
+
+/* 4. Selecciona el encabezado por etiqueta y definir
+ el color de
+fondo, color del texto del encabezado (header). 
+Alinear el contenido
+del encabezado al centro. */
+header{
+    background-color: var(--color-fondo-header);
+    color:var(--color-texto-header);
+    text-align:center;
+}
+
+/* 5. Asignar una id llamada logo y seleccionar id
+Aplica estilos ancho, alto, hacer el logo circular, 
+separar el logo del menú especificando margen a la derecha.
+ */
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 400px;
+}
+
+/* 6. Seleccionar del header el menu y la división para 
+cambiar el comportamiento en bloque para que esten en
+la misma linea y que queden verticalmente alineados
+dentro el contenedor. */
+.en-linea{
+    display: inline;
+    vertical-align: middle;
+}
+
+/* 7. Selecionar los hiperviculos del
+menu de navegación se le agregará color, eliminar
+toda decoración del texto(subrayado) y margen sólo
+a los costados, superior e inferior nada. */
+.hipervinc{
+    color: var(--color-texto-header);
+    text-decoration: none;
+    margin: 0 10px;
+}

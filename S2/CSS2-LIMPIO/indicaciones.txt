@@ -1,0 +1,32 @@
+Crear el archivo galeria.css
+
+Informar al archivo galeria.html de la existencia de su archivo de estilo.
+
+Ajustar el menú de navegación, usando un estilo en linea.
+
+Seleccionar root para variables de colores azul y gris
+Eliminar todo margen y relleno
+Agregar al body el mismo color de fondo de index.
+
+Selecionar la clase "card" y agregar display para que queden en linea,
+color de fondo rbga(42,67,59,0.1), un maximo ancho permitido, ancho,
+sombra rgba(0,0,0,0.6), alinear texto, suavisar borde, asegurar que
+las imágenes no se salgan del contenedor.
+
+Seleccionar la clase imagen-responsive y definir
+el ancho máximo permitido, el alto y asegurar que no haya espacio
+adicional debajo de la imagen.
+
+Agregar fuente externa para cambiar tipografia del titulo
+e interna de Google Fonts para cambiar el tipo de letra del párrafo.
+
+Seleccionar el id de la segunda seccion y agregar alto, ancho y 
+color de fondo.
+
+Incorporar iconos.
+Asignar la clase icon a los iconos incorporados, agregar 
+margen, ancho, alto, alinear texto.
+
+
+
+

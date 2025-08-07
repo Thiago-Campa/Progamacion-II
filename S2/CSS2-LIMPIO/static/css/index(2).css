@@ -1,0 +1,89 @@
+/* 1. Define las variables de colores en el bloque :root 
+Estas variables se usarán para definir los colores en
+todo el documento. :root, es un selector de CSS especial
+que selecciona el elemento raíz del documento HTML, 
+es decir, el elemento <html>. 
+Permite definir variables globales que se pueden
+usar en cualquier
+parte del documento CSS. */
+:root{
+    --color-primario:#007bff;
+    --color-fondo-header: var(--color-primario);
+    --color-texto-header: white;
+    --color-azul-body: rgba(0, 139, 191, 1); 
+    --color-gris-body: rgba(255, 255, 255, 0.4);
+    --color-logo-sombra: rgba(83, 175, 236, 0.5);
+}
+
+/* 2. Agregar selector universal, eliminar 
+todo margen y relleno.*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Seleccionar la etiqueta body y definir
+estilo de fuente y fondo.
+ */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(to right, var(--color-azul-body),var(--color-gris-body),var(--color-azul-body));
+}
+
+
+/* 8. Estilos para el texto h1, seleccionar la clase:
+ agregar tamaño de fuente, alinear texto al centro, agregar imagen 
+al texto, configurar la imagen para no repetir, posicionarla
+al centro, definir color al txto transparente, margen y agregar
+background-clip: text; se utiliza para especificar cómo se
+debe aplicar un fondo a un elemento de texto.
+Cuando se establece en text, el fondo se recorta para
+que solo se muestre detrás del texto, en lugar de ocupar
+todo el espacio del elemento. */
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    background-image: url('../img/bandera.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+    background-clip: text;
+    margin: 20px;
+}
+
+/* 9. Seleccionar el id de la sección con fondo y definir:
+imagen de fondo,tamaño, posición, color, alinear texto, alto margen
+y relleno cero. */
+#seccion-con-fondo{
+    background-image: url('../img/beautiful-shot-moreno-glacier-santa-cruz-argentina.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100vh;
+
+}
+
+/* 10. Seleccionar la clase contenido y definir:
+relleno, alinear texto. */
+
+.contenido{
+    padding: 20px;
+    text-align: center;
+}
+
+/* 11. Seleccionar el id del párrafo del bloque-3 y definir:
+margen y alinear el texto. */
+#p-bloque3{
+    text-align: justify;
+    margin: 30px;
+}
+
+/* 12. Selccionar la etiqueta del pie de página
+y definir: color de fondo, color, relleno, alinear
+el texto al centro. */
+footer{
+    background-color: var(--color-fondo-header);
+    color:var(--color-texto-header);
+    text-align: center;
+    padding: 20px;
+}

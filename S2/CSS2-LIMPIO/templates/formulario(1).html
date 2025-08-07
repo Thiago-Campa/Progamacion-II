@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="listas.html">Listas</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="tabla.html">Tabla</a>
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="#texto">Ir a texto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Mi primer formulario</h1>
+            <hr>
+           
+            <form>
+                <!-- * Crear campos para nombre,
+                     apellido, fecha de nacimiento y edad. -->
+            <div>
+                 <label for="nombre">Nombre:</label>
+                <input type="text" name="name" id="nombre" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="surname" id="apellido" maxlength="15" placeholder="Ej:Polo">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="fn">Fecha de nacimiento:</label>
+                <input type="date" name="fn" id="fn">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" min="15" max="55">
+            </div>
+
+            <br>
+           
+            <div>
+                <!-- * Agregar opciones para género: M,F, OTRO. -->
+                <label for="genero">Seleccione género:</label>
+                <select name="genero" id="genero">
+                    <option value="f">F</option>
+                    <option value="m">M</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <br>
+            <hr>
+
+            <div>
+                <!-- * Agregar opciones para área a desarrollarse
+                     con radio: App web, Análisis de datos,
+                      Desarrollo de juegos. -->
+                <h3>Seleccione el área a desarrollarse:</h3>
+
+                <input type="radio" name="area" id="app-web" value="App-Web">
+                <label for="app-web">App Web</label>
+
+                <input type="radio" name="area" id="datos" value="Análisis de Datos">
+                <label for="datos">Análisis de Datos</label>
+
+                <input type="radio" name="area" id="juegos" value="Desarrollo de juegos">
+                <label for="juegos">Desarrollo de juegos</label>
+
+
+            </div>
+
+            <br>
+
+            <div>
+                <!-- * Agregar opciones para seleccionar 
+                    tecnología con checkbox: HTML, CSS, JS -->
+                    <h2>Seleccione tecnología:</h2>
+
+                    <input type="checkbox" name="tecnologia" id="html" value="html">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" name="tecnologia" id="css" value="css">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" name="tecnologia" id="js" value="js">
+                    <label for="js">JS</label>
+            </div>
+
+            <br>
+
+            <div>
+                <!-- * Agregar opciones para
+                     navegador:Chrome,Opera,Safari,Firefox, Edge. -->
+                <h4>Seleccione navegador:</h4>
+                <input list="browsers" id="navegador" name="navegador">
+                <datalist id="browsers">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Edge">Edge</option>
+                </datalist>
+
+
+            </div>
+
+            <br>
+
+            <div>
+                <!-- * Agregar área para datos 
+                    personales con fieldset: teléfono, correo. -->
+                <fieldset>
+                    <legend>Datos personales:</legend>
+
+                    <div>
+                        <label for="telefono">Número de teléfono:</label>
+                        <input type="tel" name="telefono" id="telefono">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="file">Seleccione archivo:</label>
+                        <input type="file" name="file" id="file">
+                    </div>
+                </fieldset>
+            </div>
+
+            <br>
+
+            <div>
+                <!-- * Agregar área comentario. -->
+                <label for="comentario">Comentario:</label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="200"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+                
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>
