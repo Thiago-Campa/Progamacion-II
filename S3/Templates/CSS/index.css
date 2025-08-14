@@ -1,0 +1,197 @@
+:root {
+    --color-principal: #d10000;
+    --color-fondo: #ffffff;
+    --color-texto: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: italic;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 20px;
+
+
+    background-image: url("/S2/Templates/imagenes/fondo\ river.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d10000;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+    width: auto;
+    height: auto;
+    padding: 20px 50px;
+    background-color: #d10000;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: transparent;
+    background-image: url("/S2/Templates/imagenes/mantequilla historia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+}
+
+.contenedor-secciones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-left: -550px;
+}
+
+.cuadro1 {
+    width:600px;
+    height: 450px;
+    border: 2px solid #333;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #d10000;
+}
+
+.cuadro1 img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.cuadro1 p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.datos {
+    width: 300px; 
+    height: 450px;
+    float: right; 
+    padding: 20px; 
+    background-color: #ffffff;
+    margin-right: 100px;
+    margin-top: -450px;
+
+}
+
+.historia-button {
+    background-color: red;
+    color: #f0f0f0;
+    border-bottom: 10px;
+    border-radius: 9px;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.frase h3 {
+    text-align: center;
+    font-size: large;
+}
+
+.historia h4 {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.contacto {
+    margin-top: 20px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.redes {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.redes b{
+    text-decoration: none;
+}
+
+.ig {
+    width: 50px;
+}
+
+.fb {
+    width: 80px;
+    margin-left: -6px;
+}
+
+.elmas {
+    width: 250px; /* Ajustá este valor a lo que necesites */
+    height: auto; /* Mantiene la proporción */
+    margin-top: 30px;
+}
+
+
+.pie {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.pie p {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    color: #000000;
+}
+
+.pie img {
+    max-width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
